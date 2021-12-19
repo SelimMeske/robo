@@ -308,18 +308,21 @@ DevTools listening on ws://localhost:55602/devtools/browser/995315c8-1908-4453-b
 console.log: WebExtensions: reset-default-search: starting.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
 JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
-rt" "52425" "-no-remote" "-profile" "C:\\Users\\Selim\\AppData\\Local\\Temp\\rust_mozprofileT55O5I"
-1639879990448	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Selim\\AppData\\Local\\Temp\\rust_mozprofileT55O5I\\search.json.mozlz4", (void 0)))
+1639882293048	Marionette	INFO	Stopped listening on port 55608
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+et: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Selim\\AppData\\Local\\Temp\\rust_mozprofileT55O5I\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://localhost:52425/devtools/browser/89956456-4fa6-48bb-9de6-db0448bc676b
 1639879991974	Marionette	INFO	Listening on port 52431
 1639879992255	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.log: WebExtensions: reset-default-search: starting.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
 JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
-rt" "52529" "-no-remote" "-profile" "C:\\Users\\Selim\\AppData\\Local\\Temp\\rust_mozprofileJ3vCHZ"
-1639880062420	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Selim\\AppData\\Local\\Temp\\rust_mozprofileJ3vCHZ\\search.json.mozlz4", (void 0)))
+1639882294034	Marionette	INFO	Stopped listening on port 52431
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+elim\\AppData\\Local\\Temp\\rust_mozprofileJ3vCHZ\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://localhost:52529/devtools/browser/4a077682-3b71-4e7d-b9b5-a1ee5d89fb65
 1639880064102	Marionette	INFO	Listening on port 52538
 1639880064208	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
@@ -333,16 +336,20 @@ DevTools listening on ws://localhost:52214/devtools/browser/d8f31d05-b32e-424d-a
 1639880873469	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 console.log: WebExtensions: reset-default-search: starting.
 console.log: WebExtensions: reset-default-search: No addons in our list are installed.
-\\firefox.exe" "--marionette" "--remote-debugging-port" "52140" "-no-remote" "-profile" "C:\\Users\\Selim\\AppData\\Local\\Temp\\rust_mozprofileLpgIT2"
-1639880917847	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Selim\\AppData\\Local\\Temp\\rust_mozprofileLpgIT2\\search.json.mozlz4", (void 0)))
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1639882294868	Marionette	INFO	Stopped listening on port 52220
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 6436, IPC I/O Parent] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:542
+gIT2\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://localhost:52140/devtools/browser/238973f8-8c35-4272-a0c2-f64e254fac12
 1639880919366	Marionette	INFO	Listening on port 52148
 1639880919619	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-1639880962217	geckodriver	INFO	Listening on 127.0.0.1:52292
-1639880965259	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52293" "-no-remote" "-profile" "C:\\Users\\Selim\\AppData\\Local\\Temp\\rust_mozprofile7pFWFm"
-1639880965514	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Selim\\AppData\\Local\\Temp\\rust_mozprofile7pFWFm\\search.json.mozlz4", (void 0)))
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1639882296121	Marionette	INFO	Stopped listening on port 52148
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+et: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Selim\\AppData\\Local\\Temp\\rust_mozprofile7pFWFm\\search.json.mozlz4", (void 0)))
 DevTools listening on ws://localhost:52293/devtools/browser/cb53d5ec-431a-4e20-92c0-db2f9758fdca
 1639880967109	Marionette	INFO	Listening on port 52300
 1639880967274	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
