@@ -4,14 +4,16 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait
-import time
-import sys
 from random import choice
+import time, sys, requests, shutil
 
 driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
 driver.get("https://app.wombo.art")
 
-users_styles = sys.argv[1].split(',')
+try:
+    users_styles = sys.argv[1]
+except IndexError:
+    users_styles = []
 
 with open("words.txt", "r") as file:
     words = file.read()
@@ -56,10 +58,10 @@ for word in words:
     }
 
     if users_styles:
-        if (len(users_styles) == 1):
+        if (len(users_styles.split(',')) == 1):
             style_card_element = driver.find_element_by_xpath(styles[users_styles[0]])
         else:
-            style_card_element = driver.find_element_by_xpath(styles[choice(users_styles)])
+            style_card_element = driver.find_element_by_xpath(styles[choice(users_styles.split(','))])
     else:
         style_card_element = driver.find_element_by_xpath(choice(list(styles.values())))
     style_card_element.click()
@@ -86,10 +88,10 @@ for word in words:
         )
     finally:
         image_src = driver.find_element_by_xpath(final_image_xpath).get_attribute("src")
+        __image = requests.get(image_src, stream=True)
 
         with open(word + ".png", "wb") as picture:
-            the_art = driver.find_element_by_xpath(final_image_xpath)
-            picture.write(the_art.screenshot_as_png)
+            shutil.copyfileobj(__image.raw, picture)
             time.sleep(4)
             driver.find_element_by_xpath(get_back_button).click()
 
