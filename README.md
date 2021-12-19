@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.cis-openscraper.com%2Finfos%2Fstack&psig=AOvVaw1mog0ibWid2rELHWSo526V&ust=1639970199421000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCODh7J3z7vQCFQAAAAAdAAAAABAJ" width="300">
+    <img src="https://www.cis-openscraper.com/static/images/stack/selenium-logo.png" width="300">
 </p>
 
 # Robo v1.0.0
