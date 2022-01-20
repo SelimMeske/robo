@@ -2,7 +2,7 @@
     <img src="https://www.cis-openscraper.com/static/images/stack/selenium-logo.png" width="300">
 </p>
 
-# Robo v1.0.0
+# Robo v1.0.4
 
 Robo is a python script that automates the generation and the download of the images on wombo.ai.
 
@@ -33,7 +33,7 @@ The usage of the script can be simple as navigating to the robo destination fold
 
 ```shell
 cd robo
-python robo.py
+python main.py
 ```
 
 ## Configuration
