@@ -57,7 +57,7 @@ coding makes me crazy
 By default the styles will be picked randomly. Should you need to limit the styles that will be used for the generation of the images add them as an argument separated with a comma.
 
 ```shell
-python robo.py "hd,vibrant"
+python main.py "hd,vibrant"
 ```
 
 The above execution of the script will randomly switch between those two styles and generate the images based on them. You can also choose only one style by adding only one style as an argument.
