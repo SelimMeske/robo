@@ -9,6 +9,8 @@ import time, sys, requests, shutil
 
 
 def run(users_styles):
+    number_identifier = 100
+
     driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
     driver.get("https://app.wombo.art")
 
@@ -86,10 +88,11 @@ def run(users_styles):
             image_src = driver.find_element_by_xpath(final_image_xpath).get_attribute("src")
             __image = requests.get(image_src, stream=True)
 
-            with open("output/" + word + ".png", "wb") as picture:
+            with open("output/" + "Ai.morpheus #" + str(number_identifier) + ".png", "wb") as picture:
                 shutil.copyfileobj(__image.raw, picture)
                 time.sleep(4)
                 driver.find_element_by_xpath(get_back_button).click()
+                number_identifier += 1
         except Exception as e:
             print("Timedout refreshing.")
             time.sleep(3)   
